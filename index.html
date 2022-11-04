@@ -1,0 +1,11 @@
+<input type="text" id="g">
+<br>
+<span id="res"></span>
+<script>
+var g = document.getElementById("g");
+var res  = document.getElementById("res");
+  
+g.addEventListener('keyup', (event) => {
+  res.innerHTML = parseInt(g.value)*0.0321507;
+});
+</script>

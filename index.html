@@ -1,11 +1,44 @@
-<input type="text" id="g">
-<br>
-<span id="res"></span>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conversion Calculator</title>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  label, input, p {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  input {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Conversion Calculator</h1>
+
+<label for="g">Enter a value in grams:</label><br>
+<input type="text" id="g" name="g"><br>
+
+<p>Result in pounds: <span id="res"></span></p>
+
 <script>
-var g = document.getElementById("g");
-var res  = document.getElementById("res");
-  
-g.addEventListener('keyup', (event) => {
-  res.innerHTML = parseFloat(g.value)*0.0321507;
-});
+  var g = document.getElementById("g");
+  var res  = document.getElementById("res");
+
+  g.addEventListener('keyup', (event) => {
+    res.innerHTML = parseFloat(g.value)*0.0321507;
+  });
 </script>
+
+</body>
+</html>
